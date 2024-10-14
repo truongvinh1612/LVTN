@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  demo-final:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-14T21:47:58.68557+07:00"
+    description: A Helm chart for Kubernetes
+    digest: bd445f36090b046f0f53226744dbf552f01c176f9cd12ed0f796e9cf88f3f7e2
+    name: demo-final
+    type: application
+    urls:
+    - https://truongvinh1612.github.io/LVTN/demo-final-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-14T21:47:58.68495+07:00"
