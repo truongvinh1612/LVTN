@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-spring-boot-app
+spec:
+  type: {{ .Values.springboot.type }}
+  selector:
+    app: {{ .Release.Name }}-spring-boot-app
+  ports:
+    - port: {{ .Values.springboot.port }}
+      targetPort: {{ .Values.springboot.port }}

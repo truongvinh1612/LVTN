@@ -1,0 +1,29 @@
+client:
+  replicas: 1
+  image: b2012283/booking-client
+  type: LoadBalancer
+  port: 3000
+
+springboot:
+  replicas: 1
+  image: b2012283/booking-be
+  port: 8080
+  type: ClusterIP
+
+secret:
+  rootpass: dHYxNjEyMjAwMg==
+  userpass: dHYxNjEyMjAwMg==
+
+configmap:
+  username: vinhtruong
+  dbname: Booking
+  service: mysql
+
+ingress:
+  hostname: booking-hotel.com.vn
+  paths:
+    path1: /api
+    path2: /
+
+mysql:
+  image: mysql:8.0.32

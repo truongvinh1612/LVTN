@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  MYSQL_USER: {{ .Values.configmap.username }}
+  MYSQL_DATABASE: {{ .Values.configmap.dbname }}
+  MYSQL_SERVICE: {{ .Release.Name }}-mysql
